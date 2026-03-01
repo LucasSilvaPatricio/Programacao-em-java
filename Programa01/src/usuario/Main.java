@@ -33,4 +33,6 @@ void main() {
     c.retirar(sc.nextDouble());
 
     println(c);
+
+    sc.close();
 }
