@@ -1,5 +1,7 @@
 package banco;
 
+import static java.lang.IO.println;
+
 public class Conta {
     private int numeroConta;
     private String nomeUsuario;
@@ -41,4 +43,15 @@ public class Conta {
         this.valorNaConta -= valor + TAXA;
     }
 
+    public String toString(){
+        return "Dados da conta: "
+                +"\n"
+                +"Conta: "
+                +getNumeroConta()
+                +" Nome: "
+                +getNomeUsuario()
+                +" Valor: "
+                + String.format("%.2f",getValorNaConta())
+                +"\n";
+    }
 }
