@@ -11,14 +11,10 @@ public class Conta {
         this.nomeUsuario = nomeUsuario;
     }
 
-    public Conta(int numeroConta, String nomeUsuario, double valorNaConta){
+    public Conta(int numeroConta, String nomeUsuario, double depositoInicial){
         this.numeroConta = numeroConta;
         this.nomeUsuario = nomeUsuario;
-        this.valorNaConta = valorNaConta;
-    }
-
-    public void setNumeroConta(int numeroConta){
-        this.numeroConta = numeroConta;
+        depositar(depositoInicial);
     }
 
     public int getNumeroConta(){
