@@ -22,6 +22,7 @@ void main() {
     double avg = sum/vect.length;
 
     IO.println("AVERAGE PRICE: "+avg);
+    sc.close();
 }
 //    double[]vect = new double[10];
 //    double value = 0.0;
